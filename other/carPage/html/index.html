@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>carpage</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/style-index.css">
+</head>
+<body>
+
+<audio id="music" controls="controls" preload="auto" style="opacity: 0; position: absolute; top: -5rem">
+    <source src="http://7xsdec.com5.z0.glb.qiniucdn.com/music.mp3" type="audio/mpeg">
+</audio>
+<div id="wrap">
+    <div id="imgs">
+        <div id="loading">
+            <svg width="38" height="38" viewbox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
+                        <stop stop-color="#fff" stop-opacity="0" offset="0%"></stop>
+                        <stop stop-color="#fff" stop-opacity=".631" offset="63.146%"></stop>
+                        <stop stop-color="#fff" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(1 1)">
+                        <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="2"></path>
+                            <animateTransform attributename="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s" repeatcount="indefinite">
+                        
+                        <circle fill="#fff" cx="36" cy="18" r="1"></circle>
+                            <animateTransform attributename="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s" repeatcount="indefinite">
+                        
+                    </animateTransform></animateTransform></g>
+                </g>
+            </svg>
+            <p>疯狂为您加载中</p>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="../js/zepto.min.js"></script>
+<!--<script src="http://wximg.gtimg.com/tmt/workflow-next/js/zepto.min.js"></script>-->
+<script src="../js/pageSwitch.js"></script>
+<!--<script src="http://wximg.gtimg.com/tmt/workflow-next/js/pageSwitch.js"></script>-->
+<script src="../js/index.js"></script>
+<!--<script src="http://wximg.gtimg.com/tmt/workflow-next/js/index.js"></script>-->
+<script>
+    window.onload = function () {
+        app.imgLoad();
+    }
+
+</script>
+</body>
+</html>
