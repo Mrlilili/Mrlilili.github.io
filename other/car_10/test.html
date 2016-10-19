@@ -16,6 +16,7 @@
     <meta itemprop="name" content="佛山南海保时捷中心 多款车型金秋特惠">
     <meta itemprop="description" content="现货充足，优选配置，心动价格。">
     <meta itemprop="image" content="">
+    <script src="http://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
     <title>佛山南海保时捷中心 多款车型金秋特惠</title>
     <link rel="shortcut icon" href="http://oss2.rabbitpre.com/rp-preview/widget/common/img/favicon_fbd8366.ico"
           type="image/x-icon">
@@ -1940,96 +1941,95 @@
 <script>!function () {
     require.config({traceBack: !0, mainDomain: "/apps/", cdnDomain: "http://oss.szzbmy.com/rp2/apps/"})
 }();</script>
-<script>
-    require.resourceMap({
-        "res": {
-            "zepto": {"pkg": "p0"},
-            "page/mobile": {
-                "pkg": "p1",
-                "deps": ["common", "loading", "pageManagement", "zepto/touch", "bounceFix", "slideProgress", "animation/animation.async.css"]
-            },
-            "common": {"pkg": "p1", "deps": ["async", "common/requestAnimationFrame"]},
-            "loading": {"pkg": "p1", "deps": ["zepto", "zepto/fx", "zepto/fx.method", "animation"]},
-            "pageManagement": {
-                "pkg": "p1",
-                "deps": ["zepto", "common", "point", "db", "zepto/touch", "pageManagement/loading.tpl", "pageManagement/formSubmitSuccess.tpl", "pageManagement/form.tpl", "pageManagement/video.tpl", "pageManagement/oneCall.tpl", "pageManagement/oneCallPic.tpl", "pageManagement/fingerprint.tpl", "pageManagement/fingerprintwhite.tpl", "pageManagement/blessing.tpl"]
-            },
-            "zepto/touch": {"pkg": "p1", "deps": ["zepto"]},
-            "bounceFix": {"pkg": "p1"},
-            "slideProgress": {"pkg": "p1", "deps": ["zepto"]},
-            "animation/animation.async.css": {"pkg": "p1"},
-            "async": {"pkg": "p1"},
-            "common/requestAnimationFrame": {"pkg": "p1"},
-            "zepto/fx": {"pkg": "p1"},
-            "zepto/fx.method": {"pkg": "p1"},
-            "animation": {"pkg": "p1"},
-            "point": {"pkg": "p1"},
-            "db": {"pkg": "p1", "deps": ["zepto"]},
-            "pageManagement/loading.tpl": {"pkg": "p1"},
-            "pageManagement/formSubmitSuccess.tpl": {"pkg": "p1"},
-            "pageManagement/form.tpl": {"pkg": "p1"},
-            "pageManagement/video.tpl": {"pkg": "p1"},
-            "pageManagement/oneCall.tpl": {"pkg": "p1"},
-            "pageManagement/oneCallPic.tpl": {"pkg": "p1"},
-            "pageManagement/fingerprint.tpl": {"pkg": "p1"},
-            "pageManagement/fingerprintwhite.tpl": {"pkg": "p1"},
-            "pageManagement/blessing.tpl": {"pkg": "p1"},
-            "page/mobile/mobile.async": {
-                "pkg": "p2",
-                "deps": ["page/mobile/mobile.async.less", "effect", "common", "music", "share", "db", "fingerprintDialog", "shareMask", "blessingList", "reportAbuse", "stat"]
-            },
-            "page/mobile/mobile.async.less": {"pkg": "p2"},
-            "effect": {"pkg": "p2", "deps": ["zepto"]},
-            "music": {"pkg": "p2", "deps": ["common", "zepto"]},
-            "share": {"pkg": "p2", "deps": ["zepto", "common", "async", "db"]},
-            "fingerprintDialog": {"pkg": "p2", "deps": ["zepto", "dialog"]},
-            "shareMask": {"pkg": "p2", "deps": ["zepto", "shareMask/shareMask.async.less"]},
-            "blessingList": {
-                "pkg": "p2",
-                "deps": ["zepto", "common", "blessingList/blessingList.tpl", "blessingList/blessingItem.tpl", "db", "pageManagement/loading.tpl", "pageManagement/formSubmitSuccess.tpl"]
-            },
-            "reportAbuse": {
-                "pkg": "p2",
-                "deps": ["zepto", "dialog", "dialog/alert", "reportAbuse/reportAbuse.tpl", "reportAbuse/reportAbuse.async.less", "db"]
-            },
-            "stat": {"pkg": "p2", "deps": ["zepto"]},
-            "dialog": {"pkg": "p2", "deps": ["zepto", "dialog/dialog.tpl", "dialog/dialog.async.less"]},
-            "shareMask/shareMask.async.less": {"pkg": "p2"},
-            "blessingList/blessingList.tpl": {"pkg": "p2"},
-            "blessingList/blessingItem.tpl": {"pkg": "p2"},
-            "dialog/alert": {"pkg": "p2", "deps": ["zepto", "dialog"]},
-            "reportAbuse/reportAbuse.tpl": {"pkg": "p2"},
-            "reportAbuse/reportAbuse.async.less": {"pkg": "p2"},
-            "dialog/dialog.tpl": {"pkg": "p2"},
-            "dialog/dialog.async.less": {"pkg": "p2"},
-            "page/mobile/mobile2.async": {
-                "pkg": "p3",
-                "deps": ["animation/page-animation.async.css", "page/mobile/mobile2.async.less", "qrCode/zepto.qrCode", "zepto", "common"]
-            },
-            "animation/page-animation.async.css": {"pkg": "p3"},
-            "page/mobile/mobile2.async.less": {"pkg": "p3"},
-            "qrCode/zepto.qrCode": {"pkg": "p3", "deps": ["qrCode"]},
-            "qrCode": {"pkg": "p3"},
-            "effect/effect.async": {"pkg": "p4", "deps": ["effect/rainy", "effect/fireworks", "effect/erase"]},
-            "effect/rainy": {"pkg": "p4", "deps": ["zepto", "effect/rainy/rainyDay"]},
-            "effect/fireworks": {"pkg": "p4"},
-            "effect/erase": {"pkg": "p4", "deps": ["effect/erase/stackblur", "zepto"]},
-            "effect/rainy/rainyDay": {"pkg": "p4"},
-            "effect/erase/stackblur": {"pkg": "p4"},
-            "comment": {
-                "url": "http://oss2.rabbitpre.com/rp-preview/widget/comment/comment_cb914d8.js",
-                "deps": ["zepto", "common", "db", "comment/commentitem.tpl"]
-            },
-            "comment/commentitem.tpl": {"url": "http://oss2.rabbitpre.com/rp-preview/widget/comment/commentitem_5dd646d.tpl.js"}
+<script>require.resourceMap({
+    "res": {
+        "zepto": {"pkg": "p0"},
+        "page/mobile": {
+            "pkg": "p1",
+            "deps": ["common", "loading", "pageManagement", "zepto/touch", "bounceFix", "slideProgress", "animation/animation.async.css"]
         },
-        "pkg": {
-            "p0": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/zepto_min_757725c.js"},
-            "p1": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/page/mobile_min_af19299.js"},
-            "p2": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/page/mobile/mobile.async_min_12d7f3a.js"},
-            "p3": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/page/mobile/mobile2.async_min_bc42023.js"},
-            "p4": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/effect/effect.async_min_656d208.js"}
-        }
-    });</script>
+        "common": {"pkg": "p1", "deps": ["async", "common/requestAnimationFrame"]},
+        "loading": {"pkg": "p1", "deps": ["zepto", "zepto/fx", "zepto/fx.method", "animation"]},
+        "pageManagement": {
+            "pkg": "p1",
+            "deps": ["zepto", "common", "point", "db", "zepto/touch", "pageManagement/loading.tpl", "pageManagement/formSubmitSuccess.tpl", "pageManagement/form.tpl", "pageManagement/video.tpl", "pageManagement/oneCall.tpl", "pageManagement/oneCallPic.tpl", "pageManagement/fingerprint.tpl", "pageManagement/fingerprintwhite.tpl", "pageManagement/blessing.tpl"]
+        },
+        "zepto/touch": {"pkg": "p1", "deps": ["zepto"]},
+        "bounceFix": {"pkg": "p1"},
+        "slideProgress": {"pkg": "p1", "deps": ["zepto"]},
+        "animation/animation.async.css": {"pkg": "p1"},
+        "async": {"pkg": "p1"},
+        "common/requestAnimationFrame": {"pkg": "p1"},
+        "zepto/fx": {"pkg": "p1"},
+        "zepto/fx.method": {"pkg": "p1"},
+        "animation": {"pkg": "p1"},
+        "point": {"pkg": "p1"},
+        "db": {"pkg": "p1", "deps": ["zepto"]},
+        "pageManagement/loading.tpl": {"pkg": "p1"},
+        "pageManagement/formSubmitSuccess.tpl": {"pkg": "p1"},
+        "pageManagement/form.tpl": {"pkg": "p1"},
+        "pageManagement/video.tpl": {"pkg": "p1"},
+        "pageManagement/oneCall.tpl": {"pkg": "p1"},
+        "pageManagement/oneCallPic.tpl": {"pkg": "p1"},
+        "pageManagement/fingerprint.tpl": {"pkg": "p1"},
+        "pageManagement/fingerprintwhite.tpl": {"pkg": "p1"},
+        "pageManagement/blessing.tpl": {"pkg": "p1"},
+        "page/mobile/mobile.async": {
+            "pkg": "p2",
+            "deps": ["page/mobile/mobile.async.less", "effect", "common", "music", "share", "db", "fingerprintDialog", "shareMask", "blessingList", "reportAbuse", "stat"]
+        },
+        "page/mobile/mobile.async.less": {"pkg": "p2"},
+        "effect": {"pkg": "p2", "deps": ["zepto"]},
+        "music": {"pkg": "p2", "deps": ["common", "zepto"]},
+        "share": {"pkg": "p2", "deps": ["zepto", "common", "async", "db"]},
+        "fingerprintDialog": {"pkg": "p2", "deps": ["zepto", "dialog"]},
+        "shareMask": {"pkg": "p2", "deps": ["zepto", "shareMask/shareMask.async.less"]},
+        "blessingList": {
+            "pkg": "p2",
+            "deps": ["zepto", "common", "blessingList/blessingList.tpl", "blessingList/blessingItem.tpl", "db", "pageManagement/loading.tpl", "pageManagement/formSubmitSuccess.tpl"]
+        },
+        "reportAbuse": {
+            "pkg": "p2",
+            "deps": ["zepto", "dialog", "dialog/alert", "reportAbuse/reportAbuse.tpl", "reportAbuse/reportAbuse.async.less", "db"]
+        },
+        "stat": {"pkg": "p2", "deps": ["zepto"]},
+        "dialog": {"pkg": "p2", "deps": ["zepto", "dialog/dialog.tpl", "dialog/dialog.async.less"]},
+        "shareMask/shareMask.async.less": {"pkg": "p2"},
+        "blessingList/blessingList.tpl": {"pkg": "p2"},
+        "blessingList/blessingItem.tpl": {"pkg": "p2"},
+        "dialog/alert": {"pkg": "p2", "deps": ["zepto", "dialog"]},
+        "reportAbuse/reportAbuse.tpl": {"pkg": "p2"},
+        "reportAbuse/reportAbuse.async.less": {"pkg": "p2"},
+        "dialog/dialog.tpl": {"pkg": "p2"},
+        "dialog/dialog.async.less": {"pkg": "p2"},
+        "page/mobile/mobile2.async": {
+            "pkg": "p3",
+            "deps": ["animation/page-animation.async.css", "page/mobile/mobile2.async.less", "qrCode/zepto.qrCode", "zepto", "common"]
+        },
+        "animation/page-animation.async.css": {"pkg": "p3"},
+        "page/mobile/mobile2.async.less": {"pkg": "p3"},
+        "qrCode/zepto.qrCode": {"pkg": "p3", "deps": ["qrCode"]},
+        "qrCode": {"pkg": "p3"},
+        "effect/effect.async": {"pkg": "p4", "deps": ["effect/rainy", "effect/fireworks", "effect/erase"]},
+        "effect/rainy": {"pkg": "p4", "deps": ["zepto", "effect/rainy/rainyDay"]},
+        "effect/fireworks": {"pkg": "p4"},
+        "effect/erase": {"pkg": "p4", "deps": ["effect/erase/stackblur", "zepto"]},
+        "effect/rainy/rainyDay": {"pkg": "p4"},
+        "effect/erase/stackblur": {"pkg": "p4"},
+        "comment": {
+            "url": "http://oss2.rabbitpre.com/rp-preview/widget/comment/comment_cb914d8.js",
+            "deps": ["zepto", "common", "db", "comment/commentitem.tpl"]
+        },
+        "comment/commentitem.tpl": {"url": "http://oss2.rabbitpre.com/rp-preview/widget/comment/commentitem_5dd646d.tpl.js"}
+    },
+    "pkg": {
+        "p0": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/zepto_min_757725c.js"},
+        "p1": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/page/mobile_min_af19299.js"},
+        "p2": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/page/mobile/mobile.async_min_12d7f3a.js"},
+        "p3": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/page/mobile/mobile2.async_min_bc42023.js"},
+        "p4": {"url": "http://oss2.rabbitpre.com/rp-preview/static/pkg/effect/effect.async_min_656d208.js"}
+    }
+});</script>
 <script>var pageData = {
     "id": "cc537f9b-2bc2-40cd-82e7-f0563f6956fd",
     "name": "佛山南海保时捷中心 多款车型金秋特惠",
@@ -2916,12 +2916,26 @@
         var t;
         return t = e(), window.isPC && (document.getElementById("wrapper").style.width = t.width + "px"), window.rem = t.width / remSlice, document.documentElement.style.fontSize = rem + "px"
     }, updateWinFontSize(), window.onload = function () {
+
         return window.DEBUG = !0, setTimeout(function () {
             return document.documentElement.className += " page-ready", require.async(["zepto", "page/mobile"], function (e, t) {
+                document.addEventListener('DOMNodeInserted',function(){
+                    $('a.cmp-inner').remove();
+                    $('#cmp-1 .cmp-inner').attr('src','./1.jpg')
+                    $('#cmp-5 .cmp-inner').html('<svg version="1.2" baseProfile="tiny" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="none">'+
+                            '<path id="XMLID_12991_" fill="#999999" d="M100,100H0V0h100V100z"></path>'+
+                            '</svg>')
+                },false);
                 return t.init(), require.async(["page/mobile/mobile.async", "page/mobile/mobile2.async", "effect/effect.async"])
+
+
             })
         }, 0)
     }
 }).call(this);</script>
+<script>
+
+
+</script>
 </body>
 </html>
