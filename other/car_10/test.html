@@ -2920,11 +2920,13 @@
         return window.DEBUG = !0, setTimeout(function () {
             return document.documentElement.className += " page-ready", require.async(["zepto", "page/mobile"], function (e, t) {
                 document.addEventListener('DOMNodeInserted',function(){
-                    $('a.cmp-inner').remove();
-                    $('#cmp-1 .cmp-inner').attr('src','./1.jpg')
-                    $('#cmp-5 .cmp-inner').html('<svg version="1.2" baseProfile="tiny" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="none">'+
+                    var svg = '<svg version="1.2" baseProfile="tiny" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="none">'+
                             '<path id="XMLID_12991_" fill="#999999" d="M100,100H0V0h100V100z"></path>'+
-                            '</svg>')
+                            '</svg>';
+                    $('a.cmp-inner').remove();
+                    $('#cmp-1 .cmp-inner').attr('src','./img/1.jpg')
+                    $('#cmp-4 .cmp-inner').attr('src','./img/1_1.png')
+                    $('#cmp-5 .cmp-inner').html(svg)
                 },false);
                 return t.init(), require.async(["page/mobile/mobile.async", "page/mobile/mobile2.async", "effect/effect.async"])
 
